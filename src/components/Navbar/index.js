@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import { red } from "ansi-colors";
+
 
 
 
 function Navbar() {
   return (
-    <nav style={{ color: red }}className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand"  to="/">
        Vitamin Overdose
       </Link>

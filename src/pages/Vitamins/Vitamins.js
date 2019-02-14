@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { Button } from 'react-bootstrap';
+import "./style.css";
+
+
 
 
 
@@ -13,6 +17,8 @@ class Vitamins extends Component {
         vitaminK: '',
         vitaminE: '',
 
+  
+
     }
 
     ranges =  [
@@ -22,6 +28,8 @@ class Vitamins extends Component {
         {vitaminK: [100, 150, 200,]},
         {vitaminE: [10, 15, 25]}
     ]
+
+    
 
 
     handleInputChange = event => {
@@ -41,9 +49,11 @@ class Vitamins extends Component {
 
     
 
-        handleFormSubmit = event => {
+        handleSubmit = event => {
             // Preventing the default behavior of the form submit (which is to refresh the page)
             event.preventDefault();
+
+            
 
             
         
@@ -57,13 +67,13 @@ class Vitamins extends Component {
            return alert('Good job your taking recommended daily allowance of Vitamin A');
 
          } else if (this.ranges[0].vitaminA[1] < this.state.vitaminA) {
-             return alert('Your deficient, You need to take some more Vitamin A');
+             return 'Your deficient, You need to take some more Vitamin A';
  
          } else if (this.ranges[0].vitaminA[1] > this.state.vitaminA) {
-             return alert('You are overdosing on Vitamin A, You need to chill on this');
+             return 'You are overdosing on Vitamin A, You need to chill on this';
         
          } if (this.ranges[1].vitaminC[1] <= this.state.vitaminC) { 
-             return alert('Good job your taking recommended daily allowance of Vitamin C');
+             return 'Good job your taking recommended daily allowance of Vitamin C';
 
          } else if (this.ranges[1].vitaminC[1] < this.state.vitaminC) {
              return 'Your deficient, You need to take some more Vitamin C';
@@ -107,12 +117,13 @@ class Vitamins extends Component {
         };
 
         
+        
 
 
     render() { 
         return (
             <div>
-            <div className="jumbotron jumbotron-fluid">
+            <div id="jumbotron" className="jumbotron jumbotron-fluid"  >
             <div className="container">
                 <h1 className="display-4">Select your vitamins that you take daily</h1>
                 
@@ -120,7 +131,7 @@ class Vitamins extends Component {
             </div>
             <div className="form-group">
             <label for="exampleFormControlSelect1">Vitamin A</label>
-            <select value={this.state.vitaminA} name='vitaminA'onChange={this.handleInputChange}className="form-control" id="exampleFormControlSelect1">
+            <select value={this.state.vitaminA} name='vitaminA'onChange={this.handleInputChange.bind(this)}className="form-control" id="exampleFormControlSelect1">
 
                 
                 <option>100</option>
@@ -163,12 +174,18 @@ class Vitamins extends Component {
                 <option>15 mg</option>
                 <option>20 mg</option>
 
-                
-
-
-                
             </select>
-            <button onClick={this.handleFormSubmit}>Submit</button>
+            
+            
+            <Button as="input" type="submit" value="Submit" onClick={this.handleSubmit} />
+            
+            
+
+
+            
+            
+
+            
             
             </div>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Vitamins from './pages/Vitamins'
+import Vitamins from './pages/Vitamins/Vitamins'
 
 
 import Navbar from "./components/Navbar";

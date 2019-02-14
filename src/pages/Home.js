@@ -4,21 +4,22 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
+
 function Home() {
   return (
-    <div>
+    <div style={{ backgroundColor: 'gray'}}>
       <Hero backgroundImage="https://americanbonehealth.org/wp-content/uploads/2016/08/Vitamins-in-words-820x461.jpg">
         <p>Vitamin Overdose is a simple app to help you keep track of your vitamin intake</p>
         
-      </Hero>
-      <Container style={{ marginTop: 30 }}>
+      </Hero >
+      <Container style={{  marginTop: 30 }}>
         <Row>
           <Col size="md-12">
           <h3>Vitamin Overdose is a simple app to help you keep track of your vitamin intake</h3>
           </Col>
         </Row>
         <Row>
-          <Col size="md-12">
+          <Col  size="md-12">
             
             <p>
              Can You Really Overdose on Vitamin and Mineral Supplements?
