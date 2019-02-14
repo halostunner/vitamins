@@ -67,46 +67,46 @@ class Vitamins extends Component {
            return alert('Good job your taking recommended daily allowance of Vitamin A');
 
          } else if (this.ranges[0].vitaminA[1] < this.state.vitaminA) {
-             return 'Your deficient, You need to take some more Vitamin A';
+             return alert('Your deficient, You need to take some more Vitamin A');
  
          } else if (this.ranges[0].vitaminA[1] > this.state.vitaminA) {
-             return 'You are overdosing on Vitamin A, You need to chill on this';
+             return alert('You are overdosing on Vitamin A, You need to chill on this');
         
          } if (this.ranges[1].vitaminC[1] <= this.state.vitaminC) { 
-             return 'Good job your taking recommended daily allowance of Vitamin C';
+             return alert('Good job your taking recommended daily allowance of Vitamin C');
 
          } else if (this.ranges[1].vitaminC[1] < this.state.vitaminC) {
-             return 'Your deficient, You need to take some more Vitamin C';
+             return alert('Your deficient, You need to take some more Vitamin C');
         
          } else if (this.ranges[1].vitaminC[1] > this.state.vitaminC) {
-            return 'You are overdosing on Vitamin C, You need to chill on this';
+            return alert('You are overdosing on Vitamin C, You need to chill on this');
         
          } if (this.ranges[2].vitaminD[1] <= this.state.vitaminD) {
-             return 'Good job your taking recommended daily allowance of Vitamin D';
+             return alert('Good job your taking recommended daily allowance of Vitamin D');
         
          } else if (this.ranges[2].vitaminD[1] < this.state.vitaminD) {
-             return 'Your deficient, You need to take some more Vitamin D';
+             return alert('Your deficient, You need to take some more Vitamin D');
 
          } else if (this.ranges[2].vitaminD[1] > this.state.vitaminD) {
-             return 'You are overdosing on Vitamin D, You need to chill on this';
+             return alert('You are overdosing on Vitamin D, You need to chill on this');
 
          } if (this.ranges[3].vitaminK[1] <= this.state.vitaminK) {
-             return 'Good job your taking recommended daily allowance of Vitamin K';
+             return alert('Good job your taking recommended daily allowance of Vitamin K');
         
          } else if (this.ranges[3].vitaminK[1] < this.state.vitaminK) {
-             return 'Your deficient, You need to take some more Vitamin K';
+             return alert('Your deficient, You need to take some more Vitamin K');
 
          } else if (this.ranges[3].vitaminK[1] > this.state.vitaminK) {
-             return 'You are overdosing on Vitamin K, You need to chill on this';
+             return alert('You are overdosing on Vitamin K, You need to chill on this');
 
          } if (this.ranges[4].vitaminE[1] <= this.state.vitaminE) {
-             return 'Good job your taking recommended daily allowance of Vitamin E';
+             return alert('Good job your taking recommended daily allowance of Vitamin E');
         
          } else if (this.ranges[4].vitaminK[1] < this.state.vitaminE) {
-             return 'Your deficient, You need to take some more Vitamin E';
+             return alert('Your deficient, You need to take some more Vitamin E');
 
          } else if (this.ranges[4].vitaminE[1] > this.state.vitaminE)  {
-             return 'You are overdosing on Vitamin E, You need to chill on this';
+             return alert('You are overdosing on Vitamin E, You need to chill on this');
 
          }
 
